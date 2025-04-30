@@ -63,20 +63,69 @@ num1 = 1;
 num1 > 0 ? console.log("Positivo\n") : console.log("Negativo\n");
 
 // 15. Crie um array com 3 nomes e exiba o segundo nome.
+var array = ["Matheus", "Kauan", "Lucas"];
+console.log(array[1]);  
 
+// 16. Adicione um nome ao final de um array usando push().
+array.push("Joaozinho");
 
-// 16. Adicione um nome ao final de um array usando push().  
-// 17. Remova o primeiro elemento de um array usando shift().  
-// 18. Declare um objeto com as propriedades nome e idade.  
-// 19. Acesse a propriedade "idade" de um objeto e exiba no console.  
-// 20. Crie um loop for que conte de 1 a 5 e exiba os números.  
+// 17. Remova o primeiro elemento de um array usando shift().
+array.shift();
+
+// 18. Declare um objeto com as propriedades nome e idade.
+var objeto = {
+    nome: "Matheus",
+    idade: "19"
+}
+
+// 19. Acesse a propriedade "idade" de um objeto e exiba no console.
+console.log(objeto.idade);
+
+// 20. Crie um loop for que conte de 1 a 5 e exiba os números.
+for (var i=1; i < 6; i++) {
+    console.log(i);
+}
+
 // 21. Crie uma função que exiba "Olá, [nome]" no console.  
+function exibirOlaNome(array){
+    console.log(`Olá, ${array[0]}`);
+}
+
 // 22. Implemente uma Promise que resolve com "Sucesso" após 2 segundos.  
+await new Promise(resolve => setTimeout(() => resolve("Sucesso"), 2000))
+
 // 23. Utilize setTimeout para exibir "Tempo esgotado" após 3 segundos.  
+setTimeout(() => {
+    console.log("Tempo esgotado\n");
+}, 3000);
+
 // 24. Crie um script que exiba "Bem-vindo!" somente se uma variável "logado" for true.  
+var logado = true;
+logado === true ? console.log("Bem-vindo!\n") : console.log("Acesso negado\n");
+
 // 25. Use typeof para verificar o tipo de uma variável "nome".  
+console.log(typeof(nome));
+
 // 26. Crie um script que pergunte ao usuário o nome com prompt() e exiba com alert(). 
+nome = prompt("Qual seu nome?");
+alert(`Olá, ${nome}`);
+
 // 27. Use template string para exibir "Meu nome é [nome] e tenho [idade] anos".  
+console.log(`Meu nome é ${nome} e tenho ${idade} anos\n`);
+
 // 28. Declare uma constante com valor 100 e tente alterá-la.  
+const value = 100;
+// value = 1; Deu erro, pois constantes não podem ser alteradas.
+
 // 29. Crie um código que simule login: se usuário for "admin" e senha "123", exiba "Acesso liberado".  
+var usuario = "admin";
+var senha = "123";
+
+if(usuario === "admin" && senha === "123") {
+    console.log("Acesso liberado\n");
+}
+
 // 30. Crie uma função que receba idade e retorne "maior de idade" ou "menor de idade".
+function verificarMaiorIdade(idade) {
+    return idade >= 18 ? "Maior de idade" : "Menor de idade";
+}
