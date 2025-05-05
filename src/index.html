@@ -4,18 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/card.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">início</a></li>
+            <li><a href="index.html">Início</a></li>
             <li><a href="about.html">Sobre</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="mailto:matheusgmadureira@gmail.com?subject=Vim pelo website de atividades back-end :)&cc=matheusmadureira@alunos.utfpr.edu.br">Contato</a></li>
         </ul>
-        <div class="filter-container">
-            
-        </div>
     </nav>
+
+    <header>
+        <h1 class="title">ATIVIDADES DE</h1>
+        <h1 class="title">BACK-END</h1>
+        <p id="text-header">Atividades e projetos realizados na disciplina de desenvolvimento back-end durante o Bacharelado em Engenharia de Software</p>
+    </header>
+    
+    <div id="main-container">
+        <div class="filter-container">
+            <p id="filter-text">FILTRAR ATIVIDADES<p>
+            <select class="form-select" aria-label="Filtrar por tecnologia">
+                <option selected>Todos</option>
+                <option value="html-css">HTML e CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="nodejs">Node.js</option>
+                <option value="mongodb">MongoDB</option>
+            </select>
+        </div>
+        <div id="card-container">
+            <!--
+            aqui vai implementar automaticamente os cards adicionados em './data/cards.json'
+            utilizando a logica que está em './components/card.js'
+            -->
+        </div>
+    </div>
+    
+
+    <script src="./main.js"></script>
+    <script src="./components/card.js"></script>
 </body>
 </html>

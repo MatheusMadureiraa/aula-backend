@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Fantasy', sans-serif;
+}
+
+body {
+    color: #7fddff;
+    background-image: url('../assets-home/background.webp');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:right;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a {
+    margin: 0 max(20px, 2.8vw);
+    font-size: max(18px, 1.3vw);
+    text-decoration:none;
+    font-weight: 500;
+    color:#ffffff
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.title {
+    font-family: "Tourney", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+
+    font-size: max(2.8em, 5.1vw);
+    text-align: center;
+    text-shadow: #ffffff 0px 0px 5px;
+    margin-bottom: 20px;
+    width: 85%;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+}
+
+#text-header {
+    font-size: max(18px, 1.2vw);
+    text-align: center;
+    margin: 20px 0;
+    width: 85%;
+    color: #ffffff;
+}
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    border-top: 2px solid #ffffff68;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#filter-text {
+    margin: 0px 0px;
+    font-size: max(14px, 1.1vw);
+    text-shadow: #ffffff 0px 0px 1px;
+}
+
+.form-select {
+    width: max(150px, 14vw);
+    margin: 5px 10px;
+    padding: 5px;
+
+    font-size: max(12px, 1vw);
+    font-weight: 600;
+    text-align: center;
+    text-shadow: #ffffff 0px 0px 2px;
+    background-color: #ffffff;
+    color: #073c5a;
+    border-radius: 7px;
+}
+

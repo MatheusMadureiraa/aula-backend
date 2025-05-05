@@ -1,0 +1,56 @@
+[
+    {
+        "logos": [
+            "html-logo.svg",
+            "css-logo.svg"
+        ],
+        "titulo": "Atividade 01",
+        "topico": "Revisão front-end",
+        "descricao": "Atividade criando um formulário básico utilizando HTML e CSS.",
+        "links": [
+            { "label": "GitHub", "href": "#" },
+            { "label": "Ver Página", "href": "./pages/atividade01-forms/index.html" }
+        ]
+    },
+
+    {
+        "logos": [
+            "html-logo.svg",
+            "css-logo.svg",
+            "bootstrap-logo.svg"
+        ],
+        "titulo": "Atividade 02",
+        "topico": "Revisão front-end",
+        "descricao": "Criação de um currículo e outra página utilizando Bootstrap.",
+        "links": [
+            { "label": "GitHub", "href": "#" },
+            { "label": "Ver CV", "href": "./pages/atividade02-bootstrap/curriculo/index.html" },
+            { "label": "Ver Página", "href": "./pages/atividade02-bootstrap/atividade-bootstrap/index.html" }
+        ]
+    },
+    {
+        "logos": [
+            "js-logo.svg"
+        ],
+        "titulo": "Atividade 03",
+        "topico": "Revisão front-end",
+        "descricao": "Exercícios para treinar lógica com JavaScript",
+        "links": [
+            { "label": "GitHub", "href": "#" },
+            { "label": "Ver Código", "href": "./pages/atividade03-JS/exercicios.js" }
+        ]
+    },
+    {
+        "logos": [
+            "bootstrap-logo.svg"
+        ],
+        "titulo": "Atividade Teste",
+        "topico": "TEsteee",
+        "descricao": "Exercícios para treinar lógica com JavaScript",
+        "links": [
+            { "label": "GitHub", "href": "#" },
+            { "label": "Ver Código", "href": "./pages/atividade03-JS/exercicios.js" }
+        ]
+    }
+
+]
