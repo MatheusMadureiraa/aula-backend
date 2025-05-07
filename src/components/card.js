@@ -19,69 +19,103 @@ estrutrura final dos cards no html (exemplo do card 1):
 </div>
 */
 
-document.addEventListener("DOMContentLoaded", function () {
+let todosCards = []; // inicia com nenhum card
 
+export function filtrarCards (valorFiltro) {
+    switch (valorFiltro) {
+        case "Todos":
+            mostrarCards(todosCards);
+            break;
+        case "html-css":
+            mostrarCards(todosCards.filter(card => card.logos.includes("html-logo.svg") || card.logos.includes("css-logo.svg")));
+            break;
+        case "js":
+            mostrarCards(todosCards.filter(card => card.logos.includes("js-logo.svg")));
+            break;
+        case "bootstrap":
+            mostrarCards(todosCards.filter(card => card.logos.includes("bootstrap-logo.svg")));
+            break;
+        case "node":
+            mostrarCards(todosCards.filter(card => card.logos.includes("node-logo.svg")));
+            break;
+        case "mongo":
+            mostrarCards(todosCards.filter(card => card.logos.includes("mongodb-logo.svg")));
+            break;
+        default:
+            mostrarCards(todosCards.filter(card => card.logos.includes(valorFiltro)));
+            break;
+    }
+}
+
+export function renderizarCards () {
     fetch('./data/cards.json') // importando json
-        .then(response => response.json())
-        .then(data => {
+    .then(response => response.json())
+    .then(data => {
+        todosCards = data;
+        mostrarCards(todosCards);
+    })
+    .catch(error => console.error('Erro ao renderizar o json dos cards: ', error));
+}
 
-            const cardsContainer = document.getElementById("card-container");
+export function mostrarCards (cards) {
+    const cardsContainer = document.getElementById("card-container");
 
-            data.forEach(card => { // cria as divs necessarias para cada card
-                const cardElement = document.createElement("div");
-                cardElement.className = "card";
-                
-                const header = document.createElement("div");
-                header.className = "header-card";
+    if(cards.length === 0) {
+        cardsContainer.innerHTML = "<p class='aviso'>Nenhuma atividade com essa stack foi realizada.</p>";
+        return
+    }
 
-                // add logos no topo do card
-                card.logos.forEach(logo => {
-                    const imagem = document.createElement("img");
-                    imagem.src = `./assets-home/logos/${logo}`;
-                    imagem.alt = logo
-                    imagem.className = "card-img-top";
-                    header.appendChild(imagem);
-                })
+    cardsContainer.innerHTML = "";
 
-                // criando div do body e elementos dentro dela
-                const body = document.createElement("div");
-                body.className = "card-body";
+    cards.forEach(card => {
+        const cardElement = document.createElement("div");
+        cardElement.className = "card";
 
-                const title = document.createElement("h3");
-                title.className = "card-title";
-                title.textContent = card.titulo;
+        const header = document.createElement("div");
+        header.className = "header-card";
 
-                const topico = document.createElement("span");
-                topico.textContent = card.topico;
+        card.logos.forEach(logo => {
+            const imagem = document.createElement("img");
+            imagem.src = `./assets-home/logos/${logo}`;
+            imagem.alt = logo;
+            imagem.className = "card-img-top";
+            header.appendChild(imagem);
+        });
 
-                const descricao = document.createElement("p");
-                descricao.className = "card-text";
-                descricao.textContent = card.descricao;
+        const body = document.createElement("div");
+        body.className = "card-body";
 
-                // criando div e adicionando links
-                const linksContainer = document.createElement("div");
-                linksContainer.className = "link-card-container";
+        const title = document.createElement("h3");
+        title.className = "card-title";
+        title.textContent = card.titulo;
 
-                card.links.forEach(link => {
-                    const linkElement = document.createElement("a");
-                    linkElement.href = link.href;
-                    linkElement.textContent = link.label;
-                    linkElement.className = "link-card";
-                    linksContainer.appendChild(linkElement);
-                });
+        const topico = document.createElement("span");
+        topico.textContent = card.topico;
 
-                // juntando tudo, um abaixo do outro
-                body.appendChild(title);
-                body.appendChild(topico);
-                body.appendChild(descricao);
-                body.appendChild(linksContainer);
+        const descricao = document.createElement("p");
+        descricao.className = "card-text";
+        descricao.textContent = card.descricao;
 
-                cardElement.appendChild(header);
-                cardElement.appendChild(body);
+        const linksContainer = document.createElement("div");
+        linksContainer.className = "link-card-container";
 
-                // adicionando o card na div principal (card-container)
-                cardsContainer.appendChild(cardElement);
-            });
-        })
-        .catch(error => console.error('Erro ao carregar o json dos cards: ', error));
-});
+        card.links.forEach(link => {
+            const linkElement = document.createElement("a");
+            linkElement.href = link.href;
+            linkElement.textContent = link.label;
+            linkElement.className = "link-card";
+            linksContainer.appendChild(linkElement);
+        });
+
+        body.appendChild(title);
+        body.appendChild(topico);
+        body.appendChild(descricao);
+        body.appendChild(linksContainer);
+
+        cardElement.appendChild(header);
+        cardElement.appendChild(body);
+
+        cardsContainer.appendChild(cardElement);
+    });
+};
+

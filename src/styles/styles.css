@@ -1,8 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    margin-bottom: 20px;
-    font-family: 'Fantasy', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -15,14 +14,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 0;
+}
+
+a:hover{
+    color:#036c92;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-bottom: 20px;
+    padding-inline: 20px;
 }
 
 ul {
@@ -33,19 +39,34 @@ ul {
     justify-content: center;
 }
 
-a {
-    margin: 0 max(20px, 2.8vw);
+.link-nav {
+    margin-right: max(15px, 1.5vw);
     font-size: max(18px, 1.3vw);
     text-decoration:none;
     font-weight: 500;
     color:#ffffff
 }
+
+.social-media-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: right;
+    padding-top: 5px;
+}
+
+.logo-nav{
+    height: max(2.4vw, 32px);
+    margin: 5px;
+}
+
 header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 10px;
 }
 .title {
     font-family: "Tourney", sans-serif;
@@ -58,14 +79,14 @@ header{
     text-shadow: #ffffff 0px 0px 5px;
     margin-bottom: 20px;
     width: 85%;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     padding-bottom: 0;
 }
 
 #text-header {
     font-size: max(18px, 1.2vw);
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 0 1px 0;
     width: 85%;
     color: #ffffff;
 }
@@ -77,6 +98,7 @@ header{
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 80px;
     width: 80%;
     border-top: 2px solid #ffffff68;
 }
@@ -87,8 +109,8 @@ header{
     justify-content: center;
     text-align: center;
     padding-top: 20px;
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 #filter-text {
@@ -97,7 +119,7 @@ header{
     text-shadow: #ffffff 0px 0px 1px;
 }
 
-.form-select {
+#form-select {
     width: max(150px, 14vw);
     margin: 5px 10px;
     padding: 5px;
@@ -111,3 +133,26 @@ header{
     border-radius: 7px;
 }
 
+footer {
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 0.08rem;   
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    
+}
+
+footer a {
+    color: #7fddff;
+    font-size: 20px;
+    padding: 10px;
+
+}

@@ -37,9 +37,10 @@
 }
 
 .card-title{
-    font-size:1.3em;
+    font-size:1.4em;
     font-weight: 600;
-    color:#7fddff
+    color:#7fddff;
+    padding: 10px 0;
 }
 
 span{
@@ -47,6 +48,7 @@ span{
     font-weight: 550;
     font-size: 1.1em;
 }
+
 
 .link-card-container{
     display: flex;

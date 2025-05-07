@@ -13,10 +13,14 @@
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="about.html">Sobre</a></li>
-            <li><a href="mailto:matheusgmadureira@gmail.com?subject=Vim pelo website de atividades back-end :)&cc=matheusmadureira@alunos.utfpr.edu.br">Contato</a></li>
+            <li><a class="link-nav" href="index.html">Início</a></li>
+            <li><a class="link-nav" href="https://github.com/MatheusMadureiraa/aula-backend/blob/main/README.md">Sobre</a></li>
+            <li><a class="link-nav" href="mailto:matheusgmadureira@gmail.com?subject=Vim pelo website de atividades back-end :)&cc=matheusmadureira@alunos.utfpr.edu.br">Contato</a></li>
         </ul>
+        <div class="social-media-container">
+            <a href="https://github.com/MatheusMadureiraa" target="_blank"><img class="logo-nav" src="./assets-home/logos/github-logo.svg"></a>
+            <a href="https://www.linkedin.com/in/matheusmadureiraa/" target="_blank"><img class="logo-nav" src="./assets-home/logos/linkedin-logo.svg"></a>
+        </div>
     </nav>
 
     <header>
@@ -28,12 +32,12 @@
     <div id="main-container">
         <div class="filter-container">
             <p id="filter-text">FILTRAR ATIVIDADES<p>
-            <select class="form-select" aria-label="Filtrar por tecnologia">
+            <select id="form-select" aria-label="Filtrar por tecnologia">
                 <option selected>Todos</option>
                 <option value="html-css">HTML e CSS</option>
-                <option value="javascript">JavaScript</option>
-                <option value="nodejs">Node.js</option>
-                <option value="mongodb">MongoDB</option>
+                <option value="js">JavaScript</option>
+                <option value="node">Node.js</option>
+                <option value="mongo">MongoDB</option>
             </select>
         </div>
         <div id="card-container">
@@ -44,8 +48,16 @@
         </div>
     </div>
     
+    <footer>
+        <p>&copy; 2025 Matheus Madureira. Todos os direitos reservados.</p>
+        <p>Desenvolvido para a disciplina de Back-end e para treinamento pessoal.</p>
+        <div class="footer-links">
+            <a href="https://github.com/MatheusMadureiraa" target="_blank">GitHub</a>
+            <span>|</span>
+            <a href="https://www.linkedin.com/in/matheusmadureiraa/" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
 
-    <script src="./main.js"></script>
-    <script src="./components/card.js"></script>
+    <script type="module" src="./main.js"></script>
 </body>
 </html>
