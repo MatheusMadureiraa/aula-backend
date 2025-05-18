@@ -6,9 +6,9 @@
         ],
         "titulo": "Atividade 01",
         "topico": "Revisão front-end",
-        "descricao": "Atividade criando um formulário básico utilizando HTML e CSS.",
+        "descricao": "Atividade criando um formulário básico utilizando HTML e CSS",
         "links": [
-            { "label": "GitHub", "href": "#" },
+            { "label": "GitHub", "href": "https://github.com/MatheusMadureiraa/aula-backend/tree/main/pages/atividade01-forms" },
             { "label": "Ver Página", "href": "./pages/atividade01-forms/index.html" }
         ]
     },
@@ -21,9 +21,9 @@
         ],
         "titulo": "Atividade 02",
         "topico": "Revisão front-end",
-        "descricao": "Criação de um currículo e outra página utilizando Bootstrap.",
+        "descricao": "Criação de um currículo e outra página utilizando Bootstrap",
         "links": [
-            { "label": "GitHub", "href": "#" },
+            { "label": "GitHub", "href": "https://github.com/MatheusMadureiraa/aula-backend/tree/main/pages/atividade02-bootstrap" },
             { "label": "Ver CV", "href": "./pages/atividade02-bootstrap/curriculo/index.html" },
             { "label": "Ver Página", "href": "./pages/atividade02-bootstrap/atividade-bootstrap/index.html" }
         ]
@@ -36,20 +36,32 @@
         "topico": "Revisão front-end",
         "descricao": "Exercícios para treinar lógica com JavaScript",
         "links": [
-            { "label": "GitHub", "href": "#" },
+            { "label": "GitHub", "href": "https://github.com/MatheusMadureiraa/aula-backend/tree/main/pages/atividade03-JS" },
             { "label": "Ver Código", "href": "./pages/atividade03-JS/exercicios.js" }
         ]
     },
     {
         "logos": [
-            "bootstrap-logo.svg"
+            "node-logo.svg",
+            "html-logo.svg"
         ],
-        "titulo": "Atividade Teste",
-        "topico": "TEsteee",
-        "descricao": "Exercícios para treinar lógica com JavaScript",
+        "titulo": "Atividade 04",
+        "topico": "Introdução ao Node.js",
+        "descricao": "Implementar um servidor web com Node.js e ler um arquivo .txt",
         "links": [
-            { "label": "GitHub", "href": "#" },
-            { "label": "Ver Código", "href": "./pages/atividade03-JS/exercicios.js" }
+            { "label": "GitHub", "href": "https://github.com/MatheusMadureiraa/aula-backend/tree/main/pages/atividade04-node" },
+            { "label": "Ver Página", "href": "./pages/atividade04-node/pt.html" }
+        ]
+    },
+    {
+        "logos": [
+            "mongodb-logo.svg"
+        ],
+        "titulo": "Atividade 05",
+        "topico": "Introdução ao MongoDB",
+        "descricao": "Criar collections e começar estrutura do banco de dados no MongoDB",
+        "links": [
+            { "label": "GitHub", "href": "https://github.com/MatheusMadureiraa/aula-backend/tree/main/pages/atividade05-mongo" }
         ]
     }
 
