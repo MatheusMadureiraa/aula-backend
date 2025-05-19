@@ -63,6 +63,19 @@
         "links": [
             { "label": "GitHub", "href": "https://github.com/MatheusMadureiraa/aula-backend/tree/main/pages/atividade05-mongo" }
         ]
+    },
+    {
+        "logos": [
+            "mongodb-logo.svg",
+            "node-logo.svg"
+        ],
+        "titulo": "Atividade 06",
+        "topico": "Inserção de dados no MongoDB",
+        "descricao": "Inserção de dados no MongoDB utilizando Node.js e criando classes",
+        "links": [
+            { "label": "GitHub", "href": "https://github.com/MatheusMadureiraa/aula-backend/tree/main/pages/atividade06-mongoNode" },
+            { "label": "Ver Código", "href": "./pages/atividade06-mongoNode/app.js" }
+        ]
     }
 
 ]
