@@ -35,7 +35,7 @@
  - Criar e treinar inserts no MongoDB
  - Criar documento node.js para testes de funcionamento
 
-#### **4. Atividade 06:**
+#### **4. Atividade 07:**
  - [Arquivo `atividade07-js`](https://github.com/MatheusMadureiraa/aula-backend/tree/main/pages/atividade07-js)
  - Treinar uso de objetos no JavaScript
  - 15 exercícios básicos realizados
