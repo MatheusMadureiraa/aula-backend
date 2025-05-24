@@ -4,7 +4,7 @@
 ❤ [Link GitHub Pages](https://matheusmadureiraa.github.io/aula-backend/)
 
 
-## 🎨 Semanas 1 e 2: Revisão sobre front-end:
+## Revisão sobre front-end:
 #### **1. Atividade 01:**
   - [Arquivo `atividade01-backend`](https://github.com/MatheusMadureiraa/aula-backend/tree/main/pages/atividade01-forms)
   - Desenvolvimento de um website simples em HTML e CSS.
@@ -18,7 +18,7 @@
   - [Arquivo `atividade03-JS`](https://github.com/MatheusMadureiraa/aula-backend/tree/main/pages/atividade03-JS)
   - Lista de Exercícios em ***JavaScript***.
 
-## 🌟 Semana 3: Introdução Node.js
+## Node.js
 #### **1. Atividade 04:**
   - [Arquivo `atividade04-node`](https://github.com/MatheusMadureiraa/aula-backend/tree/main/pages/atividade04-node)
   - Implementar um servidor web com Node.js.
@@ -35,7 +35,10 @@
  - Criar e treinar inserts no MongoDB
  - Criar documento node.js para testes de funcionamento
 
-
+#### **4. Atividade 06:**
+ - [Arquivo `atividade07-js`](https://github.com/MatheusMadureiraa/aula-backend/tree/main/pages/atividade07-js)
+ - Treinar uso de objetos no JavaScript
+ - 15 exercícios básicos realizados
 
 
 

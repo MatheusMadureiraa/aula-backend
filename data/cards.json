@@ -12,7 +12,6 @@
             { "label": "Ver Página", "href": "./pages/atividade01-forms/index.html" }
         ]
     },
-
     {
         "logos": [
             "html-logo.svg",
@@ -75,6 +74,18 @@
         "links": [
             { "label": "GitHub", "href": "https://github.com/MatheusMadureiraa/aula-backend/tree/main/pages/atividade06-mongoNode" },
             { "label": "Ver Código", "href": "./pages/atividade06-mongoNode/app.js" }
+        ]
+    },
+    {
+        "logos": [
+            "js-logo.svg"
+        ],
+        "titulo": "Atividade 07",
+        "topico": "Atividades JS Objetos e JSON",
+        "descricao": "Objetos e JSON no JavaScript, tarefa para reposição de aulas e treino",
+        "links": [
+            { "label": "GitHub", "href": "https://github.com/MatheusMadureiraa/aula-backend/tree/main/pages/atividade07-js" },
+            { "label": "Ver Código", "href": "./pages/atividade07-js/exercicios-reposicao.js" }
         ]
     }
 
